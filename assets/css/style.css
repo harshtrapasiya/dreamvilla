@@ -283,6 +283,10 @@ h6 a,
   color: #6c7279;
 }
 
+.logo-area{
+  width: 200px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
   h1,
@@ -14661,7 +14665,7 @@ Copyright (c) 2015 Daniel Eden
   left: 14px;
   right: 14px;
   bottom: 14px;
-  border: 4px solid transparent;
+  border: 3px solid transparent;
   border-top-color: var(--color-primary);
   border-right-color: var(--color-primary);
   border-bottom-color: var(--color-primary);
@@ -14675,10 +14679,18 @@ Copyright (c) 2015 Daniel Eden
   position: relative;
   top: 50%;
   left: 50%;
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   z-index: 1001;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader img{
+  width: 50px;
+  height: 50px;
 }
 
 @-webkit-keyframes spin {
@@ -15549,7 +15561,7 @@ li.has-dropdown:hover .submenu {
 
 .banner-wrapper-one span.pre-title {
   padding: 5px 20px;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #4948FF;
   display: block;
   max-width: max-content;
   border-radius: 33px;
@@ -15570,7 +15582,12 @@ li.has-dropdown:hover .submenu {
   width: 104%;
   height: 130%;
   z-index: -1;
-  /* background: linear-gradient(91deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%); */
+  background: linear-gradient(91deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+
+.AboutUs-title::after{
+  background: linear-gradient(247deg, #E9F0FF 0%, rgba(255, 255, 255, 0) 100%) !important;
+
 }
 
 .banner-wrapper-one p {
@@ -19914,7 +19931,7 @@ li.has-dropdown:hover .submenu {
 }
 
 .rts-footer-area .logo-area {
-  max-width: 322px;
+  width: 220px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -20136,7 +20153,7 @@ li.has-dropdown:hover .submenu {
   background: #F6F6F6;
   padding: 48px 32px;
   transition: 0.3s;
-  border-top: 3px solid #E7E7E7;
+  border-top: 2px solid var(--color-primary);
 }
 
 .single-service-style-two .inner {
