@@ -72,7 +72,7 @@
                         <div class="nav-area">
                             <nav>
                                 <ul>
-                                    <li><a class="nav-link" href="contact.html">Home</a></li>
+                                    <li><a class="nav-link" href="index.html">Home</a></li>
                                     <li><a class="nav-link" href="about.html">About Us</a></li>
                                     <li><a class="nav-link" href="career.html">Careers</a></li>
                                     <li><a class="nav-link active" href="contact.html">Contact</a></li>
@@ -119,41 +119,45 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <form class="contact-form" action="https://html.themewant.com/luminos/mailer.php" method="post"
-                        action="https://html.themewant.com/luminos/mailer.php" id="contact-form">
+                    <form class="contact-form" id="myForm" name="Contact-form" action="" method="post">
                         <div class="half-input-wrapper">
                             <div class="single">
                                 <label for="name">First name</label>
-                                <input type="text" id="name" name="first_name" placeholder="First name" required>
+                                <input type="text" id="name" name="FirstName" placeholder="Enter first name"
+                                    oninput="changeBorderColor(this)" id="FirstName">
                             </div>
                             <div class="single">
                                 <label for="last">Last name</label>
-                                <input type="text" id="last" name="last_name" placeholder="Last name" required>
+                                <input type="text" id="last" name="LastName" placeholder="Enter last name" id="LastName"
+                                    oninput="changeBorderColor(this)">
                             </div>
                         </div>
                         <div class="single">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                            <input type="email" id="email" name="email" placeholder="Enter email address"
+                                oninput="changeBorderColor(this)" id="email">
                         </div>
                         <div class="single">
                             <label for="phone">Phone</label>
-                            <input type="text" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            <input type="text" name="mobile" placeholder="Enter phone number"
+                                oninput="changeBorderColor(this)" id="mobile">
                         </div>
                         <div class="single">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Leave us a message..."
-                                required></textarea>
+                            <textarea id="message" name="body" placeholder="Enter Comments"
+                                oninput="changeBorderColor(this)" id="body"></textarea>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" name="agree"
-                                required>
-                            <label class="form-check-label" for="defaultCheck1">
-                                You agree to our friendly privacy policy.
-                            </label>
-                        </div>
+
                         <button type="submit" class="rts-btn btn-primary">Send message
                             <img class="injectable" src="assets/images/service/icons/13.svg" alt="arrow">
                         </button>
+
+                        <!-- <div class="d-flex justify-content-center">
+                            <input type="submit" class="Submit_btn Submitbtn_animtion" value="Submit">
+                        </div> -->
+
+
+
                     </form>
                     <div id="form-messages"></div>
                 </div>
@@ -168,10 +172,11 @@
                 <div class="col-lg-12">
                     <div class="google-map-wrapper">
                         <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=600&amp;height=500&amp;hl=en&amp;q=Green Plaza, near D-Mart Mall, Mota Varachha, Surat, Gujarat 394101&amp;t=&amp;z=20&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="600" height="500" ></iframe>
+                            src="https://maps.google.com/maps?width=600&amp;height=500&amp;hl=en&amp;q=Green Plaza, near D-Mart Mall, Mota Varachha, Surat, Gujarat 394101&amp;t=&amp;z=20&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            width="600" height="500"></iframe>
 
 
-                    
+
                     </div>
                 </div>
             </div>
@@ -362,6 +367,50 @@
 
     <div id="anywhere-home"></div>
 
+    <!-- successModal -->
+    <div class="modal fade   Formsubmit_popup " id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div id="lottie-Successful"></div>
+
+                    <div class="successpopup_contant">
+                        <span class="heading_text">Successful!!</span>
+                        <p>Your mail successfully! <br>
+                            Our team will contact you within 24 hours.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- errorModal -->
+    <div class="modal fade  Formsubmit_popup" id="errorModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div id="lottie-Error"></div>
+
+                    <div class="successpopup_contant">
+                        <span class="heading_text">Error!</span>
+                        <p class="Error_text">Unfortunately we have an issue with your email,
+                            try again later.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- progress area start -->
     <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -372,8 +421,16 @@
     </div>
     <!-- progress area end -->
 
+    <div class="black-overlay"></div>
+
+
 
     <script defer src="assets/js/plugins/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="assets/js/jquery.validate.min.js"></script>
+    <script defer src="assets/js/lottie.min.js"></script>
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script>
     <script defer src="assets/js/vendor/waw.js"></script>
     <script defer src="assets/js/vendor/jarallax.js"></script>
     <script defer src="assets/js/plugins/smooth-scroll.js"></script>
@@ -388,6 +445,13 @@
     <script defer src="assets/js/vendor/contact-form.js"></script>
     <script defer src="assets/js/vendor/bootstrap.min.js"></script>
     <script defer src="assets/js/main.js"></script>
+
+    <script>
+       
+
+
+
+    </script>
 
 
 

@@ -36,8 +36,6 @@
                                 <ul>
                                     <li><a class="nav-link active" href="index.html">Home</a></li>
                                     <li><a class="nav-link" href="about.html">About Us</a></li>
-                                    <!-- <li><a class="nav-link" href="contact.html">Testimonials</a></li>
-                                    <li><a class="nav-link" href="faq.html">FAQs</a></li> -->
                                     <li><a class="nav-link" href="career.html">Careers</a></li>
                                     <li><a class="nav-link" href="contact.html">Contact Us</a></li>
                                 </ul>
@@ -75,7 +73,7 @@
                         <div class="nav-area">
                             <nav>
                                 <ul>
-                                    <li><a class="nav-link active" href="contact.html">Home</a></li>
+                                    <li><a class="nav-link active" href="index.html">Home</a></li>
                                     <li><a class="nav-link" href="about.html">About Us</a></li>
                                     <li><a class="nav-link" href="career.html">Careers</a></li>
                                     <li><a class="nav-link" href="contact.html">Contact</a></li>
@@ -373,161 +371,122 @@
                 </h2>
             </div>
             <div class="wrapper">
-                <div class="button-group filters-button-group">
-                    <button class="button is-checked" data-filter="*">All</button>
-                    <button class="button" data-filter=".Frontend">Frontend</button>
-                    <button class="button" data-filter=".Backend">Backend</button>
-                    <button class="button" data-filter=".Mobile">Mobile</button>
-                    <button class="button" data-filter=".UiUxDesign">Ui-Ux Design</button>
+                <div id="portfolio-filter">
+                    <ul class="portfolio-filter-menu">
+                        <li class="btn active" data-filter="all">All</li>
+                        <li class="btn" data-filter="Frontend">Frontend</li>
+                        <li class="btn" data-filter="Backend">Backend</li>
+                        <li class="btn" data-filter="Mobile">Mobile</li>
+                        <li class="btn" data-filter="Uiux">Ui-Ux Design</li>
+                    </ul>
+                </div>
+                <div class="row align-items-center portfolio-container  wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-lg-3 col-md-6" data="Frontend">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/html.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">HTML5</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="Frontend">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/css.svg" alt="service">
+                            </div>
+
+                            <div class="info">
+                                <h4 class="title">Css</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="Frontend">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/javascript.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">javascript</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="Backend">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/vuejs.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">vue js</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="Backend">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/nodejs.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">node js</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="mobile">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/php.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">Php</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="mobile">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/flutter.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">flutter</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="mobile">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/android.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">android</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data="Uiux">
+                        <div class="single-service-area-wrapper">
+                            <div class="icon">
+                                <img src="assets/images/service/icons/figma.svg" alt="service">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">Figma</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
 
 
                 </div>
 
-                <div class=" gridIsotope">
-                    <div>
-                        <div class=" wow fadeInUp element-item Frontend" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/html.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">HTML5</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class=" wow fadeInUp element-item Frontend" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/css.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">Css</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class=" wow fadeInUp element-item Frontend" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/javascript.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">javascript</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class=" wow fadeInUp element-item Frontend" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/reactjs.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">react js</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class=" wow fadeInUp element-item Frontend" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/vuejs.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">vue js</h4>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class=" wow fadeInUp element-item Backend" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/nodejs.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">node js</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class=" wow fadeInUp element-item Backend" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/php.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">Php</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class=" wow fadeInUp element-item Mobile" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/flutter.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">flutter</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class=" wow fadeInUp element-item Mobile" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/android.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">android</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class=" wow fadeInUp element-item UiUxDesign" data-wow-offset="120" data-wow-delay=".2s">
-                            <a href="#" class="single-service-area-wrapper">
-                                <div class="icon">
-                                    <img src="assets/images/service/icons/figma.svg" alt="service">
-                                </div>
-                                <div class="info">
-                                    <h4 class="title">Figma</h4>
-                                </div>
-                            </a>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-                <!-- <div class="gridIsotope">
-                    <div class="element-item city1" data-category="transition">
-                        <img src="https://placeimg.com/640/640/arch/1">
-                        <h3 class="name">Title 1</h3>
-                        <p class="city">City 1</p>
-                        <p class="date">10/2016</p>
-                    </div>
-                    <div class="element-item city2" data-category="metalloid">
-                        <img src="https://placeimg.com/640/640/arch/2">
-                        <h3 class="name">Title 2</h3>
-                        <p class="city">City 2</p>
-                        <p class="date">09/2016</p>
-                    </div>
-                    <div class="element-item city3" data-category="post-transition">
-                        <img src="https://placeimg.com/640/640/arch/3">
-                        <h3 class="name">Title 3</h3>
-                        <p class="city">City 3</p>
-                        <p class="date">09/2016</p>
-                    </div>
-                    <div class="element-item city3 " data-category="post-transition">
-                        <img src="https://placeimg.com/640/640/arch/4">
-                        <h3 class="name">Title 4</h3>
-                        <p class="city">City 3</p>
-                        <p class="date">09/2016</p>
-                    </div>
-        
-        
-                </div> -->
 
 
 
@@ -546,7 +505,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-center-style-two">
-                        <h2 class="title">Software development <br> outsourcing company Process
+                        <h2 class="title">Software
+                            development
+                            <br> outsourcing company
+                            Process
                         </h2>
                     </div>
                 </div>
@@ -566,23 +528,93 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Requirement Analysis
-                                                    </h3>
-                                                    <p class="disc">
-                                                        The foundation of CodeNortis Infotech outsourcing process lies
-                                                        in a
-                                                        thorough Requirement Analysis. The journey begins with an
-                                                        in-depth examination of the client’s needs, project goals, and
-                                                        expectations. Through close collaboration with the client, Dream
-                                                        Villa team ensures a comprehensive understanding of the
-                                                        project’s scope, intricacies, and desired outcomes.
-                                                        The objective is not just to identify technical requirements but
-                                                        also to comprehend the client’s business context, enabling
-                                                        Vision Infotech to tailor solutions that align with the client’s
-                                                        overarching objectives. This meticulous analysis lays the
-                                                        groundwork for a successful outsourcing engagement.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Requirement
+                                                    Analysis
+                                                </h3>
+                                                <p class="disc">
+                                                    The
+                                                    foundation
+                                                    of
+                                                    CodeNortis
+                                                    Infotech
+                                                    outsourcing
+                                                    process
+                                                    lies
+                                                    in a
+                                                    thorough
+                                                    Requirement
+                                                    Analysis.
+                                                    The
+                                                    journey
+                                                    begins
+                                                    with
+                                                    an
+                                                    in-depth
+                                                    examination
+                                                    of the
+                                                    client’s
+                                                    needs,
+                                                    project
+                                                    goals,
+                                                    and
+                                                    expectations.
+                                                    Through
+                                                    close
+                                                    collaboration
+                                                    with the
+                                                    client,
+                                                    Dream
+                                                    Villa
+                                                    team
+                                                    ensures
+                                                    a
+                                                    comprehensive
+                                                    understanding
+                                                    of the
+                                                    project’s
+                                                    scope,
+                                                    intricacies,
+                                                    and
+                                                    desired
+                                                    outcomes.
+                                                    The
+                                                    objective
+                                                    is
+                                                    not just
+                                                    to
+                                                    identify
+                                                    technical
+                                                    requirements
+                                                    but
+                                                    also to
+                                                    comprehend
+                                                    the
+                                                    client’s
+                                                    business
+                                                    context,
+                                                    enabling
+                                                    Vision
+                                                    Infotech
+                                                    to
+                                                    tailor
+                                                    solutions
+                                                    that
+                                                    align
+                                                    with the
+                                                    client’s
+                                                    overarching
+                                                    objectives.
+                                                    This
+                                                    meticulous
+                                                    analysis
+                                                    lays the
+                                                    groundwork
+                                                    for a
+                                                    successful
+                                                    outsourcing
+                                                    engagement.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -597,21 +629,82 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Proposal Submission
-                                                    </h3>
-                                                    <p class="disc">
-                                                        Following the Requirement Analysis, Vision Infotech formulates a
-                                                        detailed proposal. This document encompasses the scope of work,
-                                                        project timeline, and a transparent cost estimation. The
-                                                        proposal is then submitted to the client for thorough review and
-                                                        approval.
-                                                        Transparency is a key aspect of Vision Infotech’s approach,
-                                                        ensuring that clients have a clear understanding of the
-                                                        project’s intricacies, timelines, and associated costs. This
-                                                        step marks the beginning of a collaborative partnership between
-                                                        Vision Infotech and the client.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Proposal
+                                                    Submission
+                                                </h3>
+                                                <p class="disc">
+                                                    Following
+                                                    the
+                                                    Requirement
+                                                    Analysis,
+                                                    Vision
+                                                    Infotech
+                                                    formulates
+                                                    a
+                                                    detailed
+                                                    proposal.
+                                                    This
+                                                    document
+                                                    encompasses
+                                                    the
+                                                    scope of
+                                                    work,
+                                                    project
+                                                    timeline,
+                                                    and a
+                                                    transparent
+                                                    cost
+                                                    estimation.
+                                                    The
+                                                    proposal
+                                                    is
+                                                    then
+                                                    submitted
+                                                    to
+                                                    the
+                                                    client
+                                                    for
+                                                    thorough
+                                                    review
+                                                    and
+                                                    approval.
+                                                    Transparency
+                                                    is a key
+                                                    aspect
+                                                    of
+                                                    Vision
+                                                    Infotech’s
+                                                    approach,
+                                                    ensuring
+                                                    that
+                                                    clients
+                                                    have a
+                                                    clear
+                                                    understanding
+                                                    of the
+                                                    project’s
+                                                    intricacies,
+                                                    timelines,
+                                                    and
+                                                    associated
+                                                    costs.
+                                                    This
+                                                    step
+                                                    marks
+                                                    the
+                                                    beginning
+                                                    of
+                                                    a
+                                                    collaborative
+                                                    partnership
+                                                    between
+                                                    Vision
+                                                    Infotech
+                                                    and
+                                                    the
+                                                    client.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -626,21 +719,88 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Team Formation
-                                                    </h3>
-                                                    <p class="disc">
-                                                        Upon client approval of the proposal, Vision Infotech swiftly
-                                                        assembles a dedicated team of skilled professionals tailored to
-                                                        the project’s unique requirements. This team typically includes
-                                                        experienced developers, designers, and project managers chosen
-                                                        based on their expertise and compatibility with the project.
-                                                        The emphasis is on creating a cohesive and collaborative team
-                                                        that can effectively address the specific challenges posed by
-                                                        the project. Vision Infotech recognizes that the success of an
-                                                        outsourcing engagement relies on the collective skills and
-                                                        synergy of its team members.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Team
+                                                    Formation
+                                                </h3>
+                                                <p class="disc">
+                                                    Upon
+                                                    client
+                                                    approval
+                                                    of
+                                                    the
+                                                    proposal,
+                                                    Vision
+                                                    Infotech
+                                                    swiftly
+                                                    assembles
+                                                    a
+                                                    dedicated
+                                                    team of
+                                                    skilled
+                                                    professionals
+                                                    tailored
+                                                    to
+                                                    the
+                                                    project’s
+                                                    unique
+                                                    requirements.
+                                                    This
+                                                    team
+                                                    typically
+                                                    includes
+                                                    experienced
+                                                    developers,
+                                                    designers,
+                                                    and
+                                                    project
+                                                    managers
+                                                    chosen
+                                                    based on
+                                                    their
+                                                    expertise
+                                                    and
+                                                    compatibility
+                                                    with the
+                                                    project.
+                                                    The
+                                                    emphasis
+                                                    is on
+                                                    creating
+                                                    a
+                                                    cohesive
+                                                    and
+                                                    collaborative
+                                                    team
+                                                    that can
+                                                    effectively
+                                                    address
+                                                    the
+                                                    specific
+                                                    challenges
+                                                    posed by
+                                                    the
+                                                    project.
+                                                    Vision
+                                                    Infotech
+                                                    recognizes
+                                                    that the
+                                                    success
+                                                    of
+                                                    an
+                                                    outsourcing
+                                                    engagement
+                                                    relies
+                                                    on
+                                                    the
+                                                    collective
+                                                    skills
+                                                    and
+                                                    synergy
+                                                    of
+                                                    its team
+                                                    members.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -655,20 +815,77 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Project Kickoff
-                                                    </h3>
-                                                    <p class="disc">
-                                                        With the team in place, the project officially kicks off. A
-                                                        designated project manager takes charge of overseeing the entire
-                                                        development process, ensuring seamless communication between the
-                                                        client and Vision Infotech’s development team. This manager
-                                                        becomes the central point of contact, streamlining communication
-                                                        channels and facilitating a smooth workflow.
-                                                        During the kickoff, project goals, milestones, and communication
-                                                        protocols are reaffirmed. This step sets the tone for a
-                                                        collaborative and well-managed development process.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Project
+                                                    Kickoff
+                                                </h3>
+                                                <p class="disc">
+                                                    With the
+                                                    team in
+                                                    place,
+                                                    the
+                                                    project
+                                                    officially
+                                                    kicks
+                                                    off. A
+                                                    designated
+                                                    project
+                                                    manager
+                                                    takes
+                                                    charge
+                                                    of
+                                                    overseeing
+                                                    the
+                                                    entire
+                                                    development
+                                                    process,
+                                                    ensuring
+                                                    seamless
+                                                    communication
+                                                    between
+                                                    the
+                                                    client
+                                                    and
+                                                    Vision
+                                                    Infotech’s
+                                                    development
+                                                    team.
+                                                    This
+                                                    manager
+                                                    becomes
+                                                    the
+                                                    central
+                                                    point of
+                                                    contact,
+                                                    streamlining
+                                                    communication
+                                                    channels
+                                                    and
+                                                    facilitating
+                                                    a smooth
+                                                    workflow.
+                                                    During
+                                                    the
+                                                    kickoff,
+                                                    project
+                                                    goals,
+                                                    milestones,
+                                                    and
+                                                    communication
+                                                    protocols
+                                                    are
+                                                    reaffirmed.
+                                                    This
+                                                    step
+                                                    sets the
+                                                    tone for
+                                                    a
+                                                    collaborative
+                                                    and
+                                                    well-managed
+                                                    development
+                                                    process.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -683,22 +900,89 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Development and Testing
-                                                    </h3>
-                                                    <p class="disc">
-                                                        The core of Vision Infotech’s outsourcing process lies in the
-                                                        Development and Testing phase. Leveraging industry best
-                                                        practices and the latest technologies, the expert developers at
-                                                        Vision Infotech commence the software development process.
-                                                        Regular testing and quality assurance protocols are seamlessly
-                                                        integrated throughout the development lifecycle.
-                                                        Continuous testing ensures the early identification and
-                                                        rectification of any issues, preventing potential bottlenecks in
-                                                        the later stages of the project. This iterative approach
-                                                        contributes to the overall quality and reliability of the final
-                                                        software solution.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Development
+                                                    and
+                                                    Testing
+                                                </h3>
+                                                <p class="disc">
+                                                    The core
+                                                    of
+                                                    Vision
+                                                    Infotech’s
+                                                    outsourcing
+                                                    process
+                                                    lies
+                                                    in the
+                                                    Development
+                                                    and
+                                                    Testing
+                                                    phase.
+                                                    Leveraging
+                                                    industry
+                                                    best
+                                                    practices
+                                                    and the
+                                                    latest
+                                                    technologies,
+                                                    the
+                                                    expert
+                                                    developers
+                                                    at
+                                                    Vision
+                                                    Infotech
+                                                    commence
+                                                    the
+                                                    software
+                                                    development
+                                                    process.
+                                                    Regular
+                                                    testing
+                                                    and
+                                                    quality
+                                                    assurance
+                                                    protocols
+                                                    are
+                                                    seamlessly
+                                                    integrated
+                                                    throughout
+                                                    the
+                                                    development
+                                                    lifecycle.
+                                                    Continuous
+                                                    testing
+                                                    ensures
+                                                    the
+                                                    early
+                                                    identification
+                                                    and
+                                                    rectification
+                                                    of any
+                                                    issues,
+                                                    preventing
+                                                    potential
+                                                    bottlenecks
+                                                    in
+                                                    the
+                                                    later
+                                                    stages
+                                                    of
+                                                    the
+                                                    project.
+                                                    This
+                                                    iterative
+                                                    approach
+                                                    contributes
+                                                    to the
+                                                    overall
+                                                    quality
+                                                    and
+                                                    reliability
+                                                    of the
+                                                    final
+                                                    software
+                                                    solution.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -713,21 +997,81 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Continuous Collaboration
-                                                    </h3>
-                                                    <p class="disc">
-                                                        Communication is the linchpin of successful outsourcing, and
-                                                        Vision Infotech prioritizes open and transparent channels
-                                                        throughout the project. Regular updates, feedback sessions, and
-                                                        progress reports are shared with the client, fostering a
-                                                        collaborative environment.
-                                                        This continuous collaboration ensures that the client remains
-                                                        informed about the project’s status, providing opportunities for
-                                                        feedback and course correction if necessary. Vision Infotech
-                                                        understands that client involvement is crucial for aligning the
-                                                        project with its objectives.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Continuous
+                                                    Collaboration
+                                                </h3>
+                                                <p class="disc">
+                                                    Communication
+                                                    is the
+                                                    linchpin
+                                                    of
+                                                    successful
+                                                    outsourcing,
+                                                    and
+                                                    Vision
+                                                    Infotech
+                                                    prioritizes
+                                                    open and
+                                                    transparent
+                                                    channels
+                                                    throughout
+                                                    the
+                                                    project.
+                                                    Regular
+                                                    updates,
+                                                    feedback
+                                                    sessions,
+                                                    and
+                                                    progress
+                                                    reports
+                                                    are
+                                                    shared
+                                                    with
+                                                    the
+                                                    client,
+                                                    fostering
+                                                    a
+                                                    collaborative
+                                                    environment.
+                                                    This
+                                                    continuous
+                                                    collaboration
+                                                    ensures
+                                                    that
+                                                    the
+                                                    client
+                                                    remains
+                                                    informed
+                                                    about
+                                                    the
+                                                    project’s
+                                                    status,
+                                                    providing
+                                                    opportunities
+                                                    for
+                                                    feedback
+                                                    and
+                                                    course
+                                                    correction
+                                                    if
+                                                    necessary.
+                                                    Vision
+                                                    Infotech
+                                                    understands
+                                                    that
+                                                    client
+                                                    involvement
+                                                    is
+                                                    crucial
+                                                    for
+                                                    aligning
+                                                    the
+                                                    project
+                                                    with
+                                                    its
+                                                    objectives.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -742,19 +1086,72 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Quality Assurance
-                                                    </h3>
-                                                    <p class="disc">
-                                                        Rigorous Quality Assurance (QA) measures are a non-negotiable
-                                                        aspect of Vision Infotech’s outsourcing process. The QA team
-                                                        conducts thorough testing to identify and rectify any issues in
-                                                        the software solution.
-                                                        The commitment to delivering a high-quality software solution is
-                                                        embedded in every phase of the development process. Vision
-                                                        Infotech recognizes that robust QA is essential for the success
-                                                        and reliability of the final product.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Quality
+                                                    Assurance
+                                                </h3>
+                                                <p class="disc">
+                                                    Rigorous
+                                                    Quality
+                                                    Assurance
+                                                    (QA)
+                                                    measures
+                                                    are
+                                                    a
+                                                    non-negotiable
+                                                    aspect
+                                                    of
+                                                    Vision
+                                                    Infotech’s
+                                                    outsourcing
+                                                    process.
+                                                    The
+                                                    QA team
+                                                    conducts
+                                                    thorough
+                                                    testing
+                                                    to
+                                                    identify
+                                                    and
+                                                    rectify
+                                                    any
+                                                    issues
+                                                    in
+                                                    the
+                                                    software
+                                                    solution.
+                                                    The
+                                                    commitment
+                                                    to
+                                                    delivering
+                                                    a
+                                                    high-quality
+                                                    software
+                                                    solution
+                                                    is
+                                                    embedded
+                                                    in
+                                                    every
+                                                    phase
+                                                    of the
+                                                    development
+                                                    process.
+                                                    Vision
+                                                    Infotech
+                                                    recognizes
+                                                    that
+                                                    robust
+                                                    QA
+                                                    is
+                                                    essential
+                                                    for the
+                                                    success
+                                                    and
+                                                    reliability
+                                                    of the
+                                                    final
+                                                    product.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -769,21 +1166,83 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Delivery
-                                                    </h3>
-                                                    <p class="disc">
-                                                        Upon the successful completion of development and testing, the
-                                                        final software solution is delivered to the client. Vision
-                                                        Infotech ensures that the solution not only meets but exceeds
-                                                        the client’s expectations. This includes adherence to the
-                                                        agreed-upon scope, functionality, and performance benchmarks.
-                                                        The delivery phase is a culmination of meticulous planning,
-                                                        skilled execution, and rigorous quality assurance. Vision
-                                                        Infotech understands that the successful delivery of the
-                                                        software solution is a testament to the effectiveness of its
-                                                        outsourcing process.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Delivery
+                                                </h3>
+                                                <p class="disc">
+                                                    Upon the
+                                                    successful
+                                                    completion
+                                                    of
+                                                    development
+                                                    and
+                                                    testing,
+                                                    the
+                                                    final
+                                                    software
+                                                    solution
+                                                    is
+                                                    delivered
+                                                    to the
+                                                    client.
+                                                    Vision
+                                                    Infotech
+                                                    ensures
+                                                    that
+                                                    the
+                                                    solution
+                                                    not only
+                                                    meets
+                                                    but
+                                                    exceeds
+                                                    the
+                                                    client’s
+                                                    expectations.
+                                                    This
+                                                    includes
+                                                    adherence
+                                                    to
+                                                    the
+                                                    agreed-upon
+                                                    scope,
+                                                    functionality,
+                                                    and
+                                                    performance
+                                                    benchmarks.
+                                                    The
+                                                    delivery
+                                                    phase is
+                                                    a
+                                                    culmination
+                                                    of
+                                                    meticulous
+                                                    planning,
+                                                    skilled
+                                                    execution,
+                                                    and
+                                                    rigorous
+                                                    quality
+                                                    assurance.
+                                                    Vision
+                                                    Infotech
+                                                    understands
+                                                    that the
+                                                    successful
+                                                    delivery
+                                                    of
+                                                    the
+                                                    software
+                                                    solution
+                                                    is
+                                                    a
+                                                    testament
+                                                    to
+                                                    the
+                                                    effectiveness
+                                                    of its
+                                                    outsourcing
+                                                    process.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -797,21 +1256,80 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Post-Launch Support
-                                                    </h3>
-                                                    <p class="disc">
-                                                        Vision Infotech’s commitment extends beyond project delivery.
-                                                        The company provides comprehensive post-launch support and
-                                                        maintenance services. This includes addressing any issues that
-                                                        may arise after implementation, providing updates, and
-                                                        accommodating enhancements or modifications as needed.
-                                                        The post-launch support ensures the longevity and optimal
-                                                        performance of the software solution. Vision Infotech aims to be
-                                                        a long-term partner for its clients, assisting them in
-                                                        navigating the evolving landscape of technology and business
-                                                        requirements.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Post-Launch
+                                                    Support
+                                                </h3>
+                                                <p class="disc">
+                                                    Vision
+                                                    Infotech’s
+                                                    commitment
+                                                    extends
+                                                    beyond
+                                                    project
+                                                    delivery.
+                                                    The
+                                                    company
+                                                    provides
+                                                    comprehensive
+                                                    post-launch
+                                                    support
+                                                    and
+                                                    maintenance
+                                                    services.
+                                                    This
+                                                    includes
+                                                    addressing
+                                                    any
+                                                    issues
+                                                    that
+                                                    may
+                                                    arise
+                                                    after
+                                                    implementation,
+                                                    providing
+                                                    updates,
+                                                    and
+                                                    accommodating
+                                                    enhancements
+                                                    or
+                                                    modifications
+                                                    as
+                                                    needed.
+                                                    The
+                                                    post-launch
+                                                    support
+                                                    ensures
+                                                    the
+                                                    longevity
+                                                    and
+                                                    optimal
+                                                    performance
+                                                    of the
+                                                    software
+                                                    solution.
+                                                    Vision
+                                                    Infotech
+                                                    aims to
+                                                    be
+                                                    a
+                                                    long-term
+                                                    partner
+                                                    for
+                                                    its
+                                                    clients,
+                                                    assisting
+                                                    them in
+                                                    navigating
+                                                    the
+                                                    evolving
+                                                    landscape
+                                                    of
+                                                    technology
+                                                    and
+                                                    business
+                                                    requirements.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -826,20 +1344,78 @@
                                                 <img src="assets/images/service/icons/07.svg" alt="service">
                                             </div>
                                             <div class="bottom">
-                                                    <h3 class="title animated fadeIn">
-                                                        Project Review
-                                                    </h3>
-                                                    <p class="disc">
-                                                        After the software solution is delivered and implemented, Vision
-                                                        Infotech conducts a thorough project review. This step involves
-                                                        assessing the performance of the solution and addressing any
-                                                        feedback provided by the client.
-                                                        The project review is not just a formality but an opportunity
-                                                        for continuous improvement. Vision Infotech values client input
-                                                        and uses it to refine its processes, ensuring that each
-                                                        outsourcing engagement contributes to the company’s ongoing
-                                                        growth and excellence.
-                                                    </p>
+                                                <h3 class="title animated fadeIn">
+                                                    Project
+                                                    Review
+                                                </h3>
+                                                <p class="disc">
+                                                    After
+                                                    the
+                                                    software
+                                                    solution
+                                                    is
+                                                    delivered
+                                                    and
+                                                    implemented,
+                                                    Vision
+                                                    Infotech
+                                                    conducts
+                                                    a
+                                                    thorough
+                                                    project
+                                                    review.
+                                                    This
+                                                    step
+                                                    involves
+                                                    assessing
+                                                    the
+                                                    performance
+                                                    of the
+                                                    solution
+                                                    and
+                                                    addressing
+                                                    any
+                                                    feedback
+                                                    provided
+                                                    by
+                                                    the
+                                                    client.
+                                                    The
+                                                    project
+                                                    review
+                                                    is
+                                                    not just
+                                                    a
+                                                    formality
+                                                    but an
+                                                    opportunity
+                                                    for
+                                                    continuous
+                                                    improvement.
+                                                    Vision
+                                                    Infotech
+                                                    values
+                                                    client
+                                                    input
+                                                    and uses
+                                                    it
+                                                    to
+                                                    refine
+                                                    its
+                                                    processes,
+                                                    ensuring
+                                                    that
+                                                    each
+                                                    outsourcing
+                                                    engagement
+                                                    contributes
+                                                    to the
+                                                    company’s
+                                                    ongoing
+                                                    growth
+                                                    and
+                                                    excellence.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -866,11 +1442,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center-title-bg-white">
-                        <h2 class="title" style="font-size: 40px;">Frequently Asked Quetions
+                        <h2 class="title" style="font-size: 40px;">
+                            Frequently
+                            Asked
+                            Quetions
                         </h2>
-                        <p>CodeNortis Infotech offers a unified platform that fosters innovation while providing
+                        <p>CodeNortis Infotech offers a
+                            unified
+                            platform that fosters
+                            innovation while providing
                             end-to-end
-                            data management. See how we help your team solve today’s biggest challenges.</p>
+                            data management. See how we help
+                            your team solve today’s
+                            biggest challenges.</p>
                     </div>
                 </div>
             </div>
@@ -882,15 +1466,25 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How long has CodeNortis Infotech been in business?
+                                        How long has
+                                        CodeNortis
+                                        Infotech been in
+                                        business?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        CodeNortis Infotech has been in business for over X years, providing innovative
+                                        CodeNortis Infotech
+                                        has
+                                        been in business for
+                                        over X years,
+                                        providing
+                                        innovative
                                         tech
-                                        solutions for businesses of all sizes.
+                                        solutions for
+                                        businesses
+                                        of all sizes.
                                     </div>
                                 </div>
                             </div>
@@ -898,15 +1492,24 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        What types of services does CodeNortis Infotech offer?
+                                        What types of
+                                        services
+                                        does CodeNortis
+                                        Infotech
+                                        offer?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        CodeNortis Infotech offers end-to-end IT solutions, including software
+                                        CodeNortis Infotech
+                                        offers end-to-end IT
+                                        solutions, including
+                                        software
                                         development,
-                                        data management, cloud services, and more.
+                                        data management,
+                                        cloud
+                                        services, and more.
                                     </div>
                                 </div>
                             </div>
@@ -915,15 +1518,29 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        Does CodeNortis Infotech work with small businesses or only large enterprises?
+                                        Does CodeNortis
+                                        Infotech
+                                        work with small
+                                        businesses or only
+                                        large
+                                        enterprises?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        CodeNortis Infotech works with businesses of all sizes, from small startups to
+                                        CodeNortis Infotech
+                                        works with
+                                        businesses of
+                                        all
+                                        sizes, from small
+                                        startups to
                                         large
-                                        enterprises, providing tailored solutions for each.
+                                        enterprises,
+                                        providing
+                                        tailored solutions
+                                        for
+                                        each.
                                     </div>
                                 </div>
                             </div>
@@ -932,14 +1549,25 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                        What technologies does CodeNortis Infotech specialize in?
+                                        What technologies
+                                        does
+                                        CodeNortis Infotech
+                                        specialize in?
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        CodeNortis Infotech specializes in a wide range of technologies, including cloud
-                                        computing, AI, machine learning, and cybersecurity.
+                                        CodeNortis Infotech
+                                        specializes in a
+                                        wide
+                                        range
+                                        of technologies,
+                                        including cloud
+                                        computing, AI,
+                                        machine
+                                        learning, and
+                                        cybersecurity.
                                     </div>
                                 </div>
                             </div>
@@ -948,14 +1576,29 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="false"
                                         aria-controls="collapseFive">
-                                        How does CodeNortis Infotech stay up-to-date with the latest technology trends?
+                                        How does CodeNortis
+                                        Infotech stay
+                                        up-to-date
+                                        with the latest
+                                        technology trends?
                                     </button>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        CodeNortis Infotech keeps up-to-date with the latest technology trends through
-                                        continuous training, attending industry events, and collaborating with tech
+                                        CodeNortis Infotech
+                                        keeps up-to-date
+                                        with
+                                        the
+                                        latest technology
+                                        trends
+                                        through
+                                        continuous training,
+                                        attending industry
+                                        events,
+                                        and collaborating
+                                        with
+                                        tech
                                         leaders.
                                     </div>
                                 </div>
@@ -964,16 +1607,29 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        How do I get started with CodeNortis Infotech?
+                                        How do I get started
+                                        with CodeNortis
+                                        Infotech?
                                     </button>
                                 </h2>
                                 <div id="collapseSix" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Getting started with CodeNortis Infotech is easy! Simply contact us to discuss
+                                        Getting started with
+                                        CodeNortis Infotech
+                                        is
+                                        easy! Simply contact
+                                        us
+                                        to discuss
                                         your
-                                        needs, and we’ll guide you through the process of building a solution
-                                        tailored to your business.
+                                        needs, and we’ll
+                                        guide
+                                        you through the
+                                        process
+                                        of building a
+                                        solution
+                                        tailored to your
+                                        business.
                                     </div>
                                 </div>
                             </div>
@@ -1001,10 +1657,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-between-wrapper">
-                        <h2 class="title">Client Testimonials</h2>
+                        <h2 class="title">Client
+                            Testimonials
+                        </h2>
 
-                        <p class="disc">At CodeNortis Infotech, we take pride in the positive impact we've had on our
-                            clients' businesses. Here are some testimonials from our satisfied customers:</p>
+                        <p class="disc">At CodeNortis
+                            Infotech,
+                            we take pride in the
+                            positive impact we've had on our
+                            clients' businesses. Here are
+                            some
+                            testimonials from our
+                            satisfied customers:</p>
 
                     </div>
                 </div>
@@ -1016,8 +1680,17 @@
                             <div class="swiper-slide">
                                 <div class="single-testimonials-area-one">
                                     <p class="disc">
-                                        "CodeNortis Infotech helped our business grow by implementing cutting-edge
-                                        technology solutions. Their team is highly professional and responsive!"
+                                        "CodeNortis Infotech
+                                        helped our business
+                                        grow
+                                        by
+                                        implementing
+                                        cutting-edge
+                                        technology
+                                        solutions.
+                                        Their team is highly
+                                        professional and
+                                        responsive!"
                                     </p>
                                     <div class="author-wrapper">
                                         <div class="avatar">
@@ -1026,7 +1699,10 @@
                                         </div>
                                         <div class="information">
                                             <!-- <h6 class="title">Michael Chen</h6> -->
-                                            <span class="desig">John Doe, CEO of XYZ Corp</span>
+                                            <span class="desig">John
+                                                Doe, CEO of
+                                                XYZ
+                                                Corp</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1034,8 +1710,17 @@
                             <div class="swiper-slide">
                                 <div class="single-testimonials-area-one">
                                     <p class="disc">
-                                        "CodeNortis Infotech helped our business grow by implementing cutting-edge
-                                        technology solutions. Their team is highly professional and responsive!"
+                                        "CodeNortis Infotech
+                                        helped our business
+                                        grow
+                                        by
+                                        implementing
+                                        cutting-edge
+                                        technology
+                                        solutions.
+                                        Their team is highly
+                                        professional and
+                                        responsive!"
                                     </p>
                                     <div class="author-wrapper">
                                         <div class="avatar">
@@ -1044,7 +1729,10 @@
                                         </div>
                                         <div class="information">
                                             <!-- <h6 class="title">Michael Chen</h6> -->
-                                            <span class="desig">John Doe, CEO of XYZ Corp</span>
+                                            <span class="desig">John
+                                                Doe, CEO of
+                                                XYZ
+                                                Corp</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1052,8 +1740,17 @@
                             <div class="swiper-slide">
                                 <div class="single-testimonials-area-one">
                                     <p class="disc">
-                                        "CodeNortis Infotech helped our business grow by implementing cutting-edge
-                                        technology solutions. Their team is highly professional and responsive!"
+                                        "CodeNortis Infotech
+                                        helped our business
+                                        grow
+                                        by
+                                        implementing
+                                        cutting-edge
+                                        technology
+                                        solutions.
+                                        Their team is highly
+                                        professional and
+                                        responsive!"
                                     </p>
                                     <div class="author-wrapper">
                                         <div class="avatar">
@@ -1062,7 +1759,10 @@
                                         </div>
                                         <div class="information">
                                             <!-- <h6 class="title">Michael Chen</h6> -->
-                                            <span class="desig">John Doe, CEO of XYZ Corp</span>
+                                            <span class="desig">John
+                                                Doe, CEO of
+                                                XYZ
+                                                Corp</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1070,8 +1770,17 @@
                             <div class="swiper-slide">
                                 <div class="single-testimonials-area-one">
                                     <p class="disc">
-                                        "CodeNortis Infotech helped our business grow by implementing cutting-edge
-                                        technology solutions. Their team is highly professional and responsive!"
+                                        "CodeNortis Infotech
+                                        helped our business
+                                        grow
+                                        by
+                                        implementing
+                                        cutting-edge
+                                        technology
+                                        solutions.
+                                        Their team is highly
+                                        professional and
+                                        responsive!"
                                     </p>
                                     <div class="author-wrapper">
                                         <div class="avatar">
@@ -1080,7 +1789,10 @@
                                         </div>
                                         <div class="information">
                                             <!-- <h6 class="title">Michael Chen</h6> -->
-                                            <span class="desig">John Doe, CEO of XYZ Corp</span>
+                                            <span class="desig">John
+                                                Doe, CEO of
+                                                XYZ
+                                                Corp</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1104,8 +1816,12 @@
                         <h2 class="title">Industry We Serve
                         </h2>
                         <p class="disc">
-                            Offers a unified platform that fosters innovation while providing end-to-end data
-                            management. See how we help your team solve today’s biggest challenges.
+                            Offers a unified platform that
+                            fosters innovation while
+                            providing end-to-end data
+                            management. See how we help your
+                            team solve today’s biggest
+                            challenges.
                         </p>
                     </div>
                 </div>
@@ -1119,10 +1835,15 @@
                         </div>
                         <div class="title-area">
                             <a href="#">
-                                <h3 class="title animated fadeIn">Diamond</h3>
+                                <h3 class="title animated fadeIn">
+                                    Diamond</h3>
 
                             </a>
-                            <p>Efficient inventory tracking and sales management solution for businesses in the
+                            <p>Efficient inventory tracking
+                                and
+                                sales management
+                                solution for businesses in
+                                the
                                 diamond industry.</p>
                         </div>
                     </div>
@@ -1136,10 +1857,17 @@
                         </div>
                         <div class="title-area">
                             <a href="#">
-                                <h3 class="title animated fadeIn">Retail and E-Commerce</h3>
+                                <h3 class="title animated fadeIn">
+                                    Retail and E-Commerce
+                                </h3>
                             </a>
-                            <p>Streamline retail and eCommerce operations with our efficient software for order,
-                                payment, and inventory management.</p>
+                            <p>Streamline retail and
+                                eCommerce
+                                operations with our
+                                efficient software for
+                                order,
+                                payment, and inventory
+                                management.</p>
                         </div>
                     </div>
                 </div>
@@ -1152,9 +1880,14 @@
                         </div>
                         <div class="title-area">
                             <a href="#">
-                                <h3 class="title animated fadeIn">Logistics</h3>
+                                <h3 class="title animated fadeIn">
+                                    Logistics</h3>
                             </a>
-                            <p>Optimize supply chain processes with our powerful software for streamlined order
+                            <p>Optimize supply chain
+                                processes
+                                with our powerful
+                                software for streamlined
+                                order
                                 tracking and management.</p>
                         </div>
                     </div>
@@ -1168,10 +1901,15 @@
                         </div>
                         <div class="title-area">
                             <a href="#">
-                                <h3 class="title animated fadeIn">Insurance</h3>
+                                <h3 class="title animated fadeIn">
+                                    Insurance</h3>
                             </a>
-                            <p>Seamless policy management and claims processing for a stress-free customer
-                                experience in the insurance industry.</p>
+                            <p>Seamless policy management
+                                and
+                                claims processing for a
+                                stress-free customer
+                                experience in the insurance
+                                industry.</p>
                         </div>
                     </div>
                 </div>
@@ -1181,6 +1919,7 @@
         </div>
     </div>
 
+    <!-- contact area form wrapper start -->
     <div class="contact-area-form-wrapper rts-section-gapTop">
         <div class="container-contact">
             <div class="row">
@@ -1191,47 +1930,52 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <form class="contact-form" action="https://html.themewant.com/luminos/mailer.php" method="post"
-                        id="contact-form">
+                    <form class="contact-form" id="myForm" name="Contact-form" action="" method="post">
                         <div class="half-input-wrapper">
                             <div class="single">
                                 <label for="name">First name</label>
-                                <input type="text" id="name" name="first_name" placeholder="First name" required="">
+                                <input type="text" id="name" name="FirstName" placeholder="Enter first name"
+                                    oninput="changeBorderColor(this)" id="FirstName">
                             </div>
                             <div class="single">
                                 <label for="last">Last name</label>
-                                <input type="text" id="last" name="last_name" placeholder="Last name" required="">
+                                <input type="text" id="last" name="LastName" placeholder="Enter last name" id="LastName"
+                                    oninput="changeBorderColor(this)">
                             </div>
                         </div>
                         <div class="single">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="you@company.com" required="">
+                            <input type="email" id="email" name="email" placeholder="Enter email address"
+                                oninput="changeBorderColor(this)" id="email">
                         </div>
                         <div class="single">
                             <label for="phone">Phone</label>
-                            <input type="text" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            <input type="text" name="mobile" placeholder="Enter phone number"
+                                oninput="changeBorderColor(this)" id="mobile">
                         </div>
                         <div class="single">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Leave us a message..."
-                                required=""></textarea>
+                            <textarea id="message" name="body" placeholder="Enter Comments"
+                                oninput="changeBorderColor(this)" id="body"></textarea>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" name="agree"
-                                required="">
-                            <label class="form-check-label" for="defaultCheck1">
-                                You agree to our friendly privacy policy.
-                            </label>
-                        </div>
+
                         <button type="submit" class="rts-btn btn-primary">Send message
                             <img class="injectable" src="assets/images/service/icons/13.svg" alt="arrow">
                         </button>
+
+                        <!-- <div class="d-flex justify-content-center">
+                                <input type="submit" class="Submit_btn Submitbtn_animtion" value="Submit">
+                            </div> -->
+
+
+
                     </form>
                     <div id="form-messages"></div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- contact area form wrapper end -->
 
     <!-- rts cta area start -->
     <div class="rts-cts-area mt--80">
@@ -1243,11 +1987,16 @@
                             <img loading="lazy" rel="preload" src="assets/images/cta/02.png" alt="cta-area">
                         </div>
                         <div class="left-area">
-                            <h3 class="title wow fadeInUp" data-wow-delay=".1s">Transform Your Digital World
+                            <h3 class="title wow fadeInUp" data-wow-delay=".1s">
+                                Transform Your Digital World
 
                             </h3>
-                            <p class="wow fadeInUp" data-wow-delay=".3s">Unleash the full potential of digital
-                                transformation with Vision Infotech’s expert solutions.
+                            <p class="wow fadeInUp" data-wow-delay=".3s">
+                                Unleash
+                                the
+                                full potential of digital
+                                transformation with Vision
+                                Infotech’s expert solutions.
 
                             </p>
                             <a href="contact.html" class="rts-btn btn-primary wow fadeInUp" data-wow-delay=".5s">
@@ -1274,9 +2023,13 @@
                         <a href="index.html" class="logo-area">
                             <img src="assets/images/footer-logo.svg" alt="">
                         </a>
-                        <p class="disc mt--30">CodeNortis Infotech is a leading IT solutions company that provides
+                        <p class="disc mt--30">CodeNortis
+                            Infotech is a leading IT
+                            solutions company that provides
                             innovative
-                            technology services to businesses of all sizes.</p>
+                            technology services to
+                            businesses of
+                            all sizes.</p>
                     </div>
 
                 </div>
@@ -1284,46 +2037,82 @@
                     <div class="row g-5">
                         <div class=" col-md-5 col-sm-6 col-12">
                             <div class="single-nav-area-footer">
-                                <p class="parent">Services</p>
+                                <p class="parent">Services
+                                </p>
                                 <ul>
-                                    <li><a href="#">Software Development Company</a></li>
-                                    <li><a href="#">Front-End / Back-End Developers</a></li>
-                                    <li><a href="#">Full Stack Web Developers</a></li>
-                                    <li><a href="#">Off/On Shore Development</a></li>
-                                    <li><a href="#">Web Development Services</a></li>
-                                    <li><a href="#">Zoho CRM Customization</a></li>
+                                    <li><a href="#">Software
+                                            Development
+                                            Company</a>
+                                    </li>
+                                    <li><a href="#">Front-End
+                                            /
+                                            Back-End
+                                            Developers</a>
+                                    </li>
+                                    <li><a href="#">Full
+                                            Stack
+                                            Web
+                                            Developers</a>
+                                    </li>
+                                    <li><a href="#">Off/On
+                                            Shore
+                                            Development</a>
+                                    </li>
+                                    <li><a href="#">Web
+                                            Development
+                                            Services</a>
+                                    </li>
+                                    <li><a href="#">Zoho CRM
+                                            Customization</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class=" col-md-3 col-sm-6 col-12">
                             <div class="single-nav-area-footer">
-                                <p class="parent">Company</p>
+                                <p class="parent">Company
+                                </p>
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                    <li><a href="career.html">Careers</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="index.html">Home</a>
+                                    </li>
+                                    <li><a href="about.html">About
+                                            Us</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a>
+                                    </li>
+                                    <li><a href="faq.html">FAQs</a>
+                                    </li>
+                                    <li><a href="career.html">Careers</a>
+                                    </li>
+                                    <li><a href="contact.html">Contact
+                                            Us</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class=" col-md-4 col-sm-6 col-12">
                             <div class="single-nav-area-footer">
-                                <p class="parent">Get In Touch
+                                <p class="parent">Get In
+                                    Touch
                                 </p>
                                 <ul class="Company-addres">
                                     <li class=""><a href="#">
                                             <i class="fa-solid fa-location-dot"></i>
-                                            Green Plaza, near D-Mart Mall, Mota Varachha, Surat, Gujarat 394101
+                                            Green Plaza,
+                                            near
+                                            D-Mart Mall,
+                                            Mota
+                                            Varachha, Surat,
+                                            Gujarat 394101
                                         </a></li>
                                     <li class=""><a href="#">
-                                            <i class="fa-solid fa-phone-flip"></i> +91 70413 66961
+                                            <i class="fa-solid fa-phone-flip"></i>
+                                            +91
+                                            70413 66961
                                         </a>
                                     </li>
-                                    <li class="mailto:codenortisinfotech@gmail.com"><a href="#">
+                                    <li class="mailto:codenortisinfotech@gmail.com">
+                                        <a href="#">
                                             <i class="fa-solid fa-envelope"></i>
                                             codenortisinfotech@gmail.com
                                         </a>
@@ -1345,18 +2134,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="copyright-wrapper">
-                        <p>© 2025 CodeNortis Infotech. All rights reserved.</p>
+                        <p>© 2025 CodeNortis Infotech. All
+                            rights reserved.</p>
                         <div class="social-copyright-area">
                             <ul>
-                                <li aria-label="Visit our Facebook page"><a href="#"><i
-                                            class="fa-brands fa-facebook-f"></i></a></li>
-                                <li aria-label="Visit our Twitter page"><a href="#"><i
-                                            class="fa-brands fa-twitter"></i></a>
+                                <li aria-label="Visit our Facebook page">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 </li>
-                                <li aria-label="Visit our Linkedin page"><a
-                                        href="https://www.linkedin.com/company/codenortis-infotech/posts/?feedView=all"><i
-                                            class="fa-brands fa-linkedin"></i></a></li>
-                                <li aria-label="Visit our Youtube page"><a href="#">
+                                <li aria-label="Visit our Twitter page">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li aria-label="Visit our Linkedin page">
+                                    <a href="https://www.linkedin.com/company/codenortis-infotech/posts/?feedView=all"><i
+                                            class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li aria-label="Visit our Youtube page">
+                                    <a href="#">
                                         <i class="fa-solid fa-basketball"></i>
                                     </a>
                                 </li>
@@ -1384,9 +2177,14 @@
             <nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu metismenu" id="mobile-menu-active">
                     <li><a class="nav-link active" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="about.html">About Us</a></li>
-                    <li><a class="nav-link" href="career.html">Careers</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li><a class="nav-link" href="about.html">About
+                            Us</a>
+                    </li>
+                    <li><a class="nav-link" href="career.html">Careers</a>
+                    </li>
+                    <li><a class="nav-link" href="contact.html">Contact
+                            Us</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -1400,17 +2198,17 @@
                                 class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
-                    <li><a href="https://www.linkedin.com/company/codenortis-infotech/posts/?feedView=all" aria-label="social link" data-description="social"><i
-                                class="fa-brands fa-linkedin-in"></i>
+                    <li><a href="https://www.linkedin.com/company/codenortis-infotech/posts/?feedView=all"
+                            aria-label="social link" data-description="social"><i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li><a href="#" aria-label="social link" data-description="social">
-                        <i class="fa-solid fa-basketball"></i>
+                            <i class="fa-solid fa-basketball"></i>
 
                         </a>
                     </li>
-                  
-                   
+
+
                 </ul>
             </div>
         </div>
@@ -1429,51 +2227,63 @@
     </div>
     <!-- progress area end -->
 
+    <!-- successModal -->
+    <div class="modal fade   Formsubmit_popup " id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div id="lottie-Successful"></div>
+
+                    <div class="successpopup_contant">
+                        <span class="heading_text">Successful!!</span>
+                        <p>Your mail successfully! <br>
+                            Our team will contact you within 24 hours.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- errorModal -->
+    <div class="modal fade  Formsubmit_popup" id="errorModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div id="lottie-Error"></div>
+
+                    <div class="successpopup_contant">
+                        <span class="heading_text">Error!</span>
+                        <p class="Error_text">Unfortunately we have an issue with your email,
+                            try again later.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="black-overlay"></div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
-    <script>
-        // external js: isotope.pkgd.js
 
-        // init Isotope
-        var $grid = $('.gridIsotope').isotope({
-            itemSelector: '.element-item',
-            layoutMode: 'fitRows'
-        });
-        // filter functions
-        var filterFns = {
-            // show if number is greater than 50
-            numberGreaterThan50: function () {
-                var number = $(this).find('.number').text();
-                return parseInt(number, 10) > 50;
-            },
-            // show if name ends with -ium
-            ium: function () {
-                var name = $(this).find('.name').text();
-                return name.match(/ium$/);
-            }
-        };
-        // bind filter button click
-        $('.filters-button-group').on('click', 'button', function () {
-            var filterValue = $(this).attr('data-filter');
-            // use filterFn if matches value
-            filterValue = filterFns[filterValue] || filterValue;
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
-        // change is-checked class on buttons
-        $('.button-group').each(function (i, buttonGroup) {
-            var $buttonGroup = $(buttonGroup);
-            $buttonGroup.on('click', 'button', function () {
-                $buttonGroup.find('.is-checked').removeClass('is-checked');
-                $(this).addClass('is-checked');
-            });
-        });
-    </script>
 
 
     <script defer src="assets/js/plugins/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="assets/js/jquery.validate.min.js"></script>
+    <script defer src="assets/js/lottie.min.js"></script>
     <script defer src="assets/js/vendor/waw.js"></script>
     <script defer src="assets/js/vendor/jarallax.js"></script>
     <script defer src="assets/js/plugins/smooth-scroll.js"></script>
@@ -1488,6 +2298,45 @@
     <script defer src="assets/js/vendor/contact-form.js"></script>
     <script defer src="assets/js/vendor/bootstrap.min.js"></script>
     <script defer src="assets/js/main.js"></script>
+
+    <script>
+
+
+
+        (function ($) {
+
+            'use strict';
+
+            var $filters = $('.portfolio-filter-menu [data-filter]'),
+                $boxes = $('.portfolio-container [data]');
+
+            $filters.on('click', function (e) {
+                e.preventDefault();
+                var $this = $(this);
+
+                $filters.removeClass('active');
+                $this.addClass('active');
+
+                var $filterColor = $this.attr('data-filter');
+
+                if ($filterColor == 'all') {
+                    $boxes.removeClass('is-animated')
+                        .fadeOut().promise().done(function () {
+                            $boxes.addClass('is-animated').fadeIn();
+                        });
+                } else {
+                    $boxes.removeClass('is-animated')
+                        .fadeOut().promise().done(function () {
+                            $boxes.filter('[data = "' + $filterColor + '"]')
+                                .addClass('is-animated').fadeIn();
+                        });
+                }
+            });
+
+        })(jQuery);
+
+
+    </script>
 
 </body>
 

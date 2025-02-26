@@ -70,7 +70,7 @@
                         <div class="nav-area">
                             <nav>
                                 <ul>
-                                    <li><a class="nav-link" href="contact.html">Home</a></li>
+                                    <li><a class="nav-link" href="index.html">Home</a></li>
                                     <li><a class="nav-link active" href="about.html">About Us</a></li>
                                     <li><a class="nav-link" href="career.html">Careers</a></li>
                                     <li><a class="nav-link" href="contact.html">Contact</a></li>
@@ -432,6 +432,7 @@
     </div>
     <!-- testimonials area end -->
 
+    <!-- contact area form wrapper start -->
     <div class="contact-area-form-wrapper rts-section-gapTop">
         <div class="container-contact">
             <div class="row">
@@ -442,47 +443,52 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <form class="contact-form" action="https://html.themewant.com/luminos/mailer.php" method="post"
-                        id="contact-form">
+                    <form class="contact-form" id="myForm" name="Contact-form" action="" method="post">
                         <div class="half-input-wrapper">
                             <div class="single">
                                 <label for="name">First name</label>
-                                <input type="text" id="name" name="first_name" placeholder="First name" required="">
+                                <input type="text" id="name" name="FirstName" placeholder="Enter first name"
+                                    oninput="changeBorderColor(this)" id="FirstName">
                             </div>
                             <div class="single">
                                 <label for="last">Last name</label>
-                                <input type="text" id="last" name="last_name" placeholder="Last name" required="">
+                                <input type="text" id="last" name="LastName" placeholder="Enter last name" id="LastName"
+                                    oninput="changeBorderColor(this)">
                             </div>
                         </div>
                         <div class="single">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="you@company.com" required="">
+                            <input type="email" id="email" name="email" placeholder="Enter email address"
+                                oninput="changeBorderColor(this)" id="email">
                         </div>
                         <div class="single">
                             <label for="phone">Phone</label>
-                            <input type="text" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            <input type="text" name="mobile" placeholder="Enter phone number"
+                                oninput="changeBorderColor(this)" id="mobile">
                         </div>
                         <div class="single">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Leave us a message..."
-                                required=""></textarea>
+                            <textarea id="message" name="body" placeholder="Enter Comments"
+                                oninput="changeBorderColor(this)" id="body"></textarea>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" name="agree"
-                                required="">
-                            <label class="form-check-label" for="defaultCheck1">
-                                You agree to our friendly privacy policy.
-                            </label>
-                        </div>
+
                         <button type="submit" class="rts-btn btn-primary">Send message
                             <img class="injectable" src="assets/images/service/icons/13.svg" alt="arrow">
                         </button>
+
+                        <!-- <div class="d-flex justify-content-center">
+                            <input type="submit" class="Submit_btn Submitbtn_animtion" value="Submit">
+                        </div> -->
+
+
+
                     </form>
                     <div id="form-messages"></div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- contact area form wrapper end -->
 
     <!-- rts cta area start -->
     <div class="rts-cts-area mt--80">
@@ -672,8 +678,57 @@
     </div>
     <!-- progress area end -->
 
+        <!-- successModal -->
+        <div class="modal fade   Formsubmit_popup " id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div id="lottie-Successful"></div>
+
+                    <div class="successpopup_contant">
+                        <span class="heading_text">Successful!!</span>
+                        <p>Your mail successfully! <br>
+                            Our team will contact you within 24 hours.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- errorModal -->
+    <div class="modal fade  Formsubmit_popup" id="errorModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div id="lottie-Error"></div>
+
+                    <div class="successpopup_contant">
+                        <span class="heading_text">Error!</span>
+                        <p class="Error_text">Unfortunately we have an issue with your email,
+                            try again later.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="black-overlay"></div>
+
+
 
     <script defer src="assets/js/plugins/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="assets/js/jquery.validate.min.js"></script>
+    <script defer src="assets/js/lottie.min.js"></script>
     <script defer src="assets/js/vendor/waw.js"></script>
     <script defer src="assets/js/vendor/jarallax.js"></script>
     <script defer src="assets/js/plugins/smooth-scroll.js"></script>
