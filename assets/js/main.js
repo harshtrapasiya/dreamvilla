@@ -110,6 +110,10 @@
               spaceBetween: 0,
             }
           },
+          navigation: {
+            nextEl: '.swiper-button-next', // Next arrow selector
+            prevEl: '.swiper-button-prev', // Previous arrow selector
+          },
         });
       });
 
@@ -118,9 +122,9 @@
           slidesPerView: 3,
           spaceBetween: 30,
           loop: false,
-          speed: 5000,
+          speed: 2000,
           autoplay: {
-            delay: 30000,
+            delay: 5000,
             disableOnInteraction: false,
           },
           breakpoints: {
@@ -140,6 +144,10 @@
               slidesPerView: 3,
               spaceBetween: 25,
             }
+          },
+          navigation: {
+            nextEl: '.swiper-button-next', // Next arrow selector
+            prevEl: '.swiper-button-prev', // Previous arrow selector
           },
         });
       });

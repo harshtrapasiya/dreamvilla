@@ -283,7 +283,7 @@ h6 a,
   color: #6c7279;
 }
 
-.logo-area{
+.logo-area {
   width: 200px;
 }
 
@@ -14688,7 +14688,7 @@ Copyright (c) 2015 Daniel Eden
   justify-content: center;
 }
 
-.loader img{
+.loader img {
   width: 50px;
   height: 50px;
 }
@@ -15585,7 +15585,7 @@ li.has-dropdown:hover .submenu {
   background: linear-gradient(91deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 }
 
-.AboutUs-title::after{
+.AboutUs-title::after {
   background: linear-gradient(247deg, #E9F0FF 0%, rgba(255, 255, 255, 0) 100%) !important;
 
 }
@@ -16793,6 +16793,7 @@ li.has-dropdown:hover .submenu {
   border-top: 1px solid #454545;
   position: relative;
   transition: 0.3s;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -18351,7 +18352,57 @@ li.has-dropdown:hover .submenu {
   font-family: var(--font-medium);
   display: block;
   margin-bottom: 10px;
+  font-size: 18px;
 }
+
+
+.WhyChooseVision-accordion .accordion-button {
+  font-size: 18px;
+}
+
+.WhyChooseVision-accordion .accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  box-shadow: none;
+}
+
+.WhyChooseVision-list {
+  padding: 0;
+  margin: 0;
+}
+
+.WhyChooseVision-list li {
+  margin: 0;
+
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.border-right {
+  border-right: 1px solid var(--color-primary);
+}
+
+
+.WhyChooseVision-list li.active {
+  background: #0c63e426;
+  color: var(--color-primary);
+}
+
+.WhyChooseVision-list li p {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
+}
+
+
 
 .single-blog-area-start .inner-content-area .top-area .title {
   transition: 0.3s;
@@ -20384,8 +20435,10 @@ li.has-dropdown:hover .submenu {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     margin-top: 30px;
+  }
 }
-}
+
+.next-button {}
 
 .single-service-area-wrapper {
   display: flex;
@@ -20402,6 +20455,7 @@ li.has-dropdown:hover .submenu {
 
 .single-service-area-wrapper img {
   transition: 0.3s;
+  width: 32px;
 }
 
 .single-service-area-wrapper .info {
@@ -20779,10 +20833,11 @@ li.has-dropdown:hover .submenu {
   border-bottom: 1px solid #D1D1D1;
 }
 
+/* 
 .float-right-style {
   width: 124%;
   max-width: 124%;
-}
+} */
 
 @media only screen and (max-width: 575px) {
   .float-right-style {
@@ -21338,7 +21393,10 @@ li.has-dropdown:hover .submenu {
 }
 
 .contact-form {
-  margin-top: 50px;
+  padding: 30px;
+  border-top: 3px solid var(--color-primary);
+  height: 100%;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
 }
 
 .contact-form input {
@@ -21360,6 +21418,71 @@ li.has-dropdown:hover .submenu {
   gap: 32px;
 }
 
+.contact-img {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-section {
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  border: none;
+  border-top: 3px solid var(--color-primary);
+  height: 100%;
+  padding: 30px;
+  background: white;
+}
+
+.contact-contet {
+
+  margin-top: 30px;
+}
+
+.Benefits-list,
+.contact-contet ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-contet ul li {
+  margin-top: 16px;
+}
+
+.Benefits-list li,
+.contact-contet ul li a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Benefits-list-two{
+  display: block !important;
+  list-style: decimal !important;
+}
+
+.Achievement-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.Benefits-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+
+}
+
+.Benefits-list li p,
+.contact-contet ul li a p {
+  font-weight: 500;
+}
 
 .gridIsotope {
   margin-top: 30px;
@@ -21425,8 +21548,7 @@ li.has-dropdown:hover .submenu {
 #fileInput-error,
 #body-error,
 #LastName-error,
-#FullName-error
-{
+#FullName-error {
   color: red !important;
 }
 
@@ -21483,7 +21605,7 @@ li.has-dropdown:hover .submenu {
 }
 
 
-.black-overlay{
+.black-overlay {
   background-color: rgba(0, 0, 0, 0.30);
   position: fixed;
   width: 100%;
@@ -21494,7 +21616,7 @@ li.has-dropdown:hover .submenu {
   visibility: hidden;
 }
 
-.black-overlay.active{
+.black-overlay.active {
   opacity: 1;
   visibility: visible;
 }
@@ -21519,12 +21641,13 @@ li.has-dropdown:hover .submenu {
 }
 
 .contact-form textarea {
-  height: 133px;
+  height: 80px;
   border-radius: 0;
   border: 1px solid #D1D1D1;
   font-size: 16px;
   color: #6D6D6D;
   padding: 12px;
+  
 }
 
 .contact-form textarea:focus {
