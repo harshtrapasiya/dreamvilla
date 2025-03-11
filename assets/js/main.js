@@ -19,6 +19,30 @@
 
 ==================================================*/
 
+
+$(document).ready(function () {
+  // When a list item is clicked
+  $('.WhyChooseVision-list li').on('click', function () {
+      // Remove active class from all list items
+      $('.WhyChooseVision-list li').removeClass('active');
+
+      // Add active class to the clicked item
+      $(this).addClass('active');
+
+      // Get the target tab content ID from data-target attribute
+      var targetTab = $(this).data('target');
+
+      // Hide all tab content
+      $('.tab-content').hide();
+
+      // Show the selected tab content
+      $(targetTab).show();
+  });
+});
+
+
+
+
 (function ($) {
   'use strict';
 
