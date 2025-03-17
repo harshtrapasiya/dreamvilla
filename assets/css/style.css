@@ -21417,22 +21417,57 @@ li.has-dropdown:hover .submenu {
   margin-bottom: 30px;
 }
 
-.contact-page-banner {
-  height: 450px !important;
-  background-image: url(../images/contact/02.webp);
-  position: relative;
 
+.bg_iamge {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px !important;
+  position: relative;
+}
+
+
+.contact-page-banner {
+  background-image: url(../images/contact/02.webp);
 }
 
 .Career-page-banner {
-  height: 450px !important;
   background-image: url(../images/career/03.webp);
-  position: relative;
+}
+
+.aboutUs-page-banner {
+  background-image: url(../images/aboutus.png);
+}
+
+.Services-page-banner {
+  background-image: url(../images/Services.png);
+}
+
+.faq-page-banner {
+  background-image: url(../images/faq.jpg);
+}
+
+.Jobdescription-page-banner {
+  background-image: url(../images/Jobdescription.png);
+}
+
+.testimonials-page-banner {
+  background-image: url(../images/testimonials.png);
+}
+
+.career-section{
+  position: sticky;
+  top: 100px;
 }
 
 .testimonials-page-banner::after,
 .Career-page-banner::after,
-.contact-page-banner::after {
+.contact-page-banner::after,
+.Services-page-banner::after,
+.faq-page-banner::after,
+.Jobdescription-page-banner::after,
+.testimonials-page-banner::after,
+.aboutUs-page-banner::after {
   content: '';
   position: absolute;
   top: 0;
@@ -21479,12 +21514,6 @@ li.has-dropdown:hover .submenu {
   margin: auto;
 }
 
-.bg_iamge {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .contact-form {
   padding: 30px;
   border-top: 3px solid var(--color-primary);
@@ -21492,7 +21521,7 @@ li.has-dropdown:hover .submenu {
   box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
 }
 
-.contact-form input ,
+.contact-form input,
 .contact-form select {
   border-radius: 0;
   height: 44PX;
@@ -21502,9 +21531,8 @@ li.has-dropdown:hover .submenu {
   padding: 12px;
 }
 
-.contact-form input:focus ,
-.contact-form select:focus 
-{
+.contact-form input:focus,
+.contact-form select:focus {
   border: 1px solid var(--color-primary);
 }
 
@@ -21515,14 +21543,14 @@ li.has-dropdown:hover .submenu {
 }
 
 .select2-container--default .select2-selection--multiple {
-  background-color: transparent ;
+  background-color: transparent;
   border: 1px solid #aaa;
   border-radius: 4px;
   cursor: text;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
-height: 34px;
+  height: 34px;
 }
 
 .contact-img {
