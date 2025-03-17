@@ -23,20 +23,20 @@
 $(document).ready(function () {
   // When a list item is clicked
   $('.WhyChooseVision-list li').on('click', function () {
-      // Remove active class from all list items
-      $('.WhyChooseVision-list li').removeClass('active');
+    // Remove active class from all list items
+    $('.WhyChooseVision-list li').removeClass('active');
 
-      // Add active class to the clicked item
-      $(this).addClass('active');
+    // Add active class to the clicked item
+    $(this).addClass('active');
 
-      // Get the target tab content ID from data-target attribute
-      var targetTab = $(this).data('target');
+    // Get the target tab content ID from data-target attribute
+    var targetTab = $(this).data('target');
 
-      // Hide all tab content
-      $('.tab-content').hide();
+    // Hide all tab content
+    $('.tab-content').hide();
 
-      // Show the selected tab content
-      $(targetTab).show();
+    // Show the selected tab content
+    $(targetTab).show();
   });
 });
 
@@ -728,7 +728,7 @@ $(document).ready(function () {
           $('.black-overlay').addClass('active');
           setTimeout(function () {
             $('#successModal').modal('hide');
-          $('.black-overlay').removeClass('active');
+            $('.black-overlay').removeClass('active');
 
           }, 3000);
         },
@@ -737,7 +737,7 @@ $(document).ready(function () {
           $('.black-overlay').addClass('active');
           setTimeout(function () {
             $('#errorModal').modal('hide');
-          $('.black-overlay').removeClass('active');
+            $('.black-overlay').removeClass('active');
 
           }, 3000);
         }
@@ -753,87 +753,129 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(function () {
 
-      $("form[name='career-from']").validate({
-          rules: {
-              FullName: {
-                  required: true,
-              },
-              LastName: {
-                  required: true,
-              },
-              Phone: {
-                  required: true,
-              },
-              Email: {
-                  required: true,
-              },
-              body: {
-                required: true
-              },
-              fileInput: {
-                  required: true,
-              },
+    $("form[name='career-from']").validate({
+      rules: {
+        FullName: {
+          required: true,
+        },
+        LastName: {
+          required: true,
+        },
+        Phone: {
+          required: true,
+        },
+        Email: {
+          required: true,
+        },
+        body: {
+          required: true
+        },
+        fileInput: {
+          required: true,
+        },
+
+      },
+      messages: {
+        FullName: "Please  enter full name",
+        LastName: "Please  enter last name",
+        Phone: "Please  enter phone number",
+        Email: "Please  enter email address",
+        body: "Please enter your comments",
+        fileInput: "Please enter upload cv",
+      },
+      submitHandler: function (form) {
+        $('#submitButton').prop("disabled", true);
+        var data = new FormData(form);
+        $.ajax({
+          url: 'sendEmail.php',
+          method: 'POST',
+          data: data,
+          processData: false,
+          contentType: false,
+          cache: false,
+          async: false,
+          success: function (response) {
+            $('form')[0].reset();
+            $('#successModal').modal('show');
+            $('.black-overlay').addClass('active');
+
+            setTimeout(function () {
+              $('#successModal').modal('hide');
+              $('.black-overlay').removeClass('active');
+
+            }, 3000);
 
           },
-          messages: {
-              FullName: "Please  enter full name",
-              LastName: "Please  enter last name",
-              Phone: "Please  enter phone number",
-              Email: "Please  enter email address",
-              body: "Please enter your comments",
-              fileInput: "Please enter upload cv",
-          },
-          submitHandler: function (form) {
-              $('#submitButton').prop("disabled", true);
-              var data = new FormData(form);
-              $.ajax({
-                  url: 'sendEmail.php',
-                  method: 'POST',
-                  data: data,
-                  processData: false,
-                  contentType: false,
-                  cache: false,
-                  async: false,
-                  success: function (response) {
-                      $('form')[0].reset();
-                      $('#successModal').modal('show');
-                      $('.black-overlay').addClass('active');
-
-                      setTimeout(function () {
-                          $('#successModal').modal('hide');
-                          $('.black-overlay').removeClass('active');
-
-                      }, 3000);
-
-                  },
-                  error: function (error) {
-                      $('#errorModal').modal('show');
-                      $('.black-overlay').addClass('active');
-                      setTimeout(function () {
-                          $('#errorModal').modal('hide');
-                          $('.black-overlay').removeClass('active');
-                      }, 3000);
-
-                  }
-              })
-              return false;
-
+          error: function (error) {
+            $('#errorModal').modal('show');
+            $('.black-overlay').addClass('active');
+            setTimeout(function () {
+              $('#errorModal').modal('hide');
+              $('.black-overlay').removeClass('active');
+            }, 3000);
 
           }
-      });
+        })
+        return false;
+
+
+      }
+    });
 
   });
 
   $('#fileInput').change(function () {
-      const uploadItemsParagraph = $('.upload_items');
+    const uploadItemsParagraph = $('.upload_items');
 
-      if ($(this).prop('files') && $(this).prop('files').length > 0) {
-          const fileName = $(this).prop('files')[0].name;
-          uploadItemsParagraph.text(`${fileName}`);
-      } else {
-          uploadItemsParagraph.text('Upload CV');
-      }
+    if ($(this).prop('files') && $(this).prop('files').length > 0) {
+      const fileName = $(this).prop('files')[0].name;
+      uploadItemsParagraph.text(`${fileName}`);
+    } else {
+      uploadItemsParagraph.text('Upload CV');
+    }
   });
 })
 
 
+
+
+$(document).ready(function () {
+  $("#Skills").select2({
+    placeholder: "Select skills",
+    allowClear: true
+});
+  $("#apply-form").validate({
+    rules: {
+      FullName: { required: true },
+      Email: { required: true, email: true },
+      Phone: { required: true, digits: true, minlength: 10 },
+      Location: { required: true },
+      Gender: { required: true },
+      DOB: { required: true, date: true },
+      CurrentSalary: { required: true, number: true },
+      ExpectedSalary: { required: true, number: true },
+      JoiningDays: { required: true, number: true },
+      JobTitle: { required: true },
+      "Skills[]": { required: true },
+      Remark: { required: true }
+    },
+    messages: {
+      FullName: "Please enter your full name",
+      Email: "Please enter a valid email address",
+      Phone: "Please enter a valid phone number",
+      Location: "Please select your location",
+      Gender: "Please select your gender",
+      DOB: "Please enter your date of birth",
+      CurrentSalary: "Please enter your current salary",
+      ExpectedSalary: "Please enter your expected salary",
+      JoiningDays: "Please enter the number of days to join",
+      JobTitle: "Please enter your job title",
+      "Skills[]": "Please select at least one skill",
+      Remark: "Please enter a remark"
+    },
+    submitHandler: function (form) {
+      alert("Form submitted successfully!");
+      form.submit();
+    }
+  });
+});

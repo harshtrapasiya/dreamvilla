@@ -21492,7 +21492,8 @@ li.has-dropdown:hover .submenu {
   box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
 }
 
-.contact-form input {
+.contact-form input ,
+.contact-form select {
   border-radius: 0;
   height: 44PX;
   border: 1px solid #D1D1D1;
@@ -21501,7 +21502,9 @@ li.has-dropdown:hover .submenu {
   padding: 12px;
 }
 
-.contact-form input:focus {
+.contact-form input:focus ,
+.contact-form select:focus 
+{
   border: 1px solid var(--color-primary);
 }
 
@@ -21509,6 +21512,17 @@ li.has-dropdown:hover .submenu {
   display: flex;
   /* align-items: center; */
   gap: 32px;
+}
+
+.select2-container--default .select2-selection--multiple {
+  background-color: transparent ;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+height: 34px;
 }
 
 .contact-img {
@@ -22018,6 +22032,7 @@ li.has-dropdown:hover .submenu {
   border-radius: 0;
   border: 1px solid #EAF0FF;
   transition: 0.4s;
+  height: 100%;
 }
 
 @media only screen and (max-width: 575px) {
