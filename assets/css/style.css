@@ -84,9 +84,9 @@
   --s-extra-bold: 400;
   --s-black: 400;
   --transition: 0.3s;
-  --font-primary: "Aeonik", sans-serif;
-  --font-medium: "6500595b785e358dcc2a2f3a_AeonikMedium", sans-serif;
-  --font-secondary: "Aeonik", sans-serif;
+  --font-primary: "Manrope";
+  --font-medium: "Manrope";
+  --font-secondary: "Manrope";
   --font-3: "fontawesome";
   --font-size-b1: 16px;
   --font-size-b2: 16px;
@@ -102,12 +102,71 @@
   --h6: 18px;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+/* manrope-regular - latin */
 @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/manrope-v15-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* manrope-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/manrope-v15-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* manrope-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/manrope-v15-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* manrope-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/manrope-v15-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* manrope-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/manrope-v15-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* @font-face {
   font-family: "6500595b785e358dcc2a2f3a_AeonikMedium";
   src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot");
   src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot") format("embedded-opentype"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff2") format("woff2"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff") format("woff"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.ttf") format("truetype"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.svg#6500595b785e358dcc2a2f3a_AeonikMedium") format("svg");
   font-weight: 500;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -127,7 +186,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Aeonik", sans-serif;
+    font-family: 'Manrope';
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -203,7 +262,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Aeonik", sans-serif;
+  font-family: 'Manrope';
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -15070,6 +15129,7 @@ Copyright (c) 2015 Daniel Eden
   color: #000000;
   font-size: 16px;
   font-family: var(--font-medium);
+  font-weight: 500;
 }
 
 .header--sticky.sticky .nav-area ul li>a.nav-link {
@@ -21553,6 +21613,10 @@ li.has-dropdown:hover .submenu {
   height: 34px;
 }
 
+.select2-container--default .select2-search--inline .select2-search__field {
+  height: 14px;
+}
+
 .contact-img {
   width: 280px;
   margin: 0 auto;
@@ -21683,7 +21747,17 @@ li.has-dropdown:hover .submenu {
 #fileInput-error,
 #body-error,
 #LastName-error,
-#FullName-error {
+#FullName-error,
+#Location-error,
+#DOB-error,
+#CurrentSalary-error,
+#ExpectedSalary-error,
+#JoiningDays-error,
+#JobTitle-error,
+#Skills-error,
+#Gender-error,
+#Remark-error
+{
   color: red !important;
 }
 
@@ -21771,8 +21845,8 @@ li.has-dropdown:hover .submenu {
 .contact-form .single label {
   margin-bottom: 7px;
   font-size: 14px;
-  color: #4F4F4F;
-  font-weight: 500;
+  color: #272727;
+  font-weight: 600;
 }
 
 .contact-form textarea {
