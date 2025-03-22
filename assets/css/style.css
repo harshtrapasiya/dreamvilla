@@ -346,6 +346,10 @@ h6 a,
   width: 200px;
 }
 
+.text-bold{
+  font-weight: 600 !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
   h1,
@@ -14640,6 +14644,32 @@ Copyright (c) 2015 Daniel Eden
   background: linear-gradient(91deg, rgba(255, 255, 255, 0) 0%, #f8f9fa 100%);
 }
 
+
+.title-area-center-inner-with-sub.Technology-items .Technology-text {
+  display: block;
+  max-width: max-content;
+  margin: auto;
+  border: 1px solid #4948FF;
+  padding: 4px 14px;
+  border-radius: 33px;
+  position: relative;
+  z-index: 1;
+}
+
+.title-area-center-inner-with-sub.Technology-items .Technology-text::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -8.5%;
+  bottom: 0;
+  right: 0;
+  width: 104%;
+  height: 130%;
+  z-index: -1;
+  background: linear-gradient(91deg, rgba(255, 255, 255, 0) 0%, #F5F5FF 100%) !important;
+
+}
+
 .title-area-center-inner-with-sub .title {
   font-size: 64px;
   margin-bottom: 18px;
@@ -16584,6 +16614,7 @@ li.has-dropdown:hover .submenu {
 .what-we-do-main-wrapper .title {
   font-size: 28px;
   margin-bottom: 18px;
+  font-weight: 600;
 }
 
 .what-we-do-main-wrapper p.disc {
@@ -17748,6 +17779,7 @@ li.has-dropdown:hover .submenu {
   padding: 26px 32px;
   font-size: 20px;
   color: #000;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 575px) {
@@ -18418,6 +18450,7 @@ li.has-dropdown:hover .submenu {
 
 .WhyChooseVision-accordion .accordion-button {
   font-size: 18px;
+  font-weight: 500;
 }
 
 .WhyChooseVision-accordion .accordion-button:focus {
@@ -21553,7 +21586,8 @@ li.has-dropdown:hover .submenu {
 }
 
 .heading-text {
-  color: var(--color-primary);
+  color: white;
+  font-weight: 600;
 
 }
 
@@ -22024,6 +22058,7 @@ li.has-dropdown:hover .submenu {
 
 .career-two-section .title {
   font-size: 46px;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -22150,7 +22185,7 @@ li.has-dropdown:hover .submenu {
 }
 
 .single-values-in-action .information .title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -23882,8 +23917,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .single-counter-up-one p {
   font-size: 20px;
-  font-weight: 400;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .single-counter-up-one .title {
