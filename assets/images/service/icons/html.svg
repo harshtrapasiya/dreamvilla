@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="32" width="24" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#0066ff" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.1621 5L25.2344 26.5977L16.5684 29L7.92578 26.6016L6 5H27.1621Z" fill="#0066FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5801 27.1641L23.584 25.2227L25.2305 6.76562H16.5801V27.1641Z" fill="#0066FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.834 12.0645H16.582V9.41602H9.9375L10 10.127L10.6504 17.4277H16.5781V14.7773H13.0762L12.834 12.0645ZM13.4297 18.752H10.7715L11.1426 22.9121L16.5703 24.418L16.582 24.4141V21.6582L16.5703 21.6621L13.6191 20.8652L13.4297 18.752Z" fill="#EBEBEB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5723 17.4277H19.834L19.5273 20.8633L16.5723 21.6602V24.416L22.0039 22.9102L22.043 22.4629L22.666 15.4883L22.7305 14.7773H16.5723V17.4277ZM16.5723 12.0586V12.0645H22.9707L23.0234 11.4687L23.1445 10.125L23.207 9.41406H16.5723V12.0586Z" fill="white"/>
+</svg>
