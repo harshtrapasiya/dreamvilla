@@ -107,7 +107,7 @@
 
     <!-- contact banner areas start -->
     <div class="aboutUs-page-banner jarallax bg_iamge">
-        <div class="container-s-float">
+        <div class="container">
 
             <div class="heropage-content">
                 <h2 class="wow fadeInUp heading-text" data-wow-delay=".5s">Our Story
@@ -246,7 +246,7 @@
         <div class="rts-career-banner-area rts-section-gap pt--0">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 ">
+                    <div class="col-lg-6 order-1 order-lg-0">
                         <div class="career-two-section">
                             <h1 class="title">
                                 What We Do
@@ -270,7 +270,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 pl--30 pl_md--15 pl_sm--10 pt_md--30 pt_sm--30">
+                    <div class="col-lg-6 order-0 order-lg-1 pl--30 pl_md--15 pl_sm--10 pt_md--30 pt_sm--30">
                         <div class="thumbnail-top jarallax thumbnail-consultancy" data-speed=".85">
                             <img class="jarallax-img" src="assets/images/whatwedo.jpg" alt="career">
                         </div>
@@ -587,7 +587,7 @@
             </div>
 
             <div class="row mt--80">
-                <div class="col-4 ">
+                <div class="col-lg-4 ">
                     <div class="contact-section">
                         <div class="contact-img">
                             <img src="assets/images/contact/contact.jpg" class="" alt="">
@@ -597,23 +597,24 @@
                             </p>
                             <ul>
                                 <li>
-                                    <a href="">
+                                    <a href="tel:+61461349206">
                                         <img src="assets/images/call.svg" alt="">
                                         <p>Call Us</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="mailto:codenortisinfotech@gmail.com">
                                         <img src="assets/images/email.svg" alt="">
                                         <p>Email Us</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        <img src="assets/images/whatsapp.svg" alt="">
-                                        <p> Whatsapp</p>
+                                    <a href="https://wa.me/61461349206" target="_blank">
+                                        <img src="assets/images/whatsapp.svg" alt="WhatsApp">
+                                        <p>WhatsApp</p>
                                     </a>
                                 </li>
+
                             </ul>
                         </div>
                         <div class="contact-contet">
@@ -621,7 +622,7 @@
                             </p>
                             <ul>
                                 <li>
-                                    <a href="">
+                                    <a href="apply.html">
                                         <img src="assets/images/upload.svg" alt="">
                                         <p>
                                             Upload Your CV</p>
@@ -679,7 +680,7 @@
 
                         </form>
                         <div class="row mt--30">
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <p class="contact-heading">Your Benefits :</p>
                                 <ul class="Benefits-list">
                                     <li>
@@ -715,7 +716,7 @@
                                 </ul>
 
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <p class="contact-heading">What Happens Next?
                                 </p>
                                 <ul class="Benefits-list-two Benefits-list ">
@@ -935,26 +936,40 @@
             <nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu metismenu" id="mobile-menu-active">
                     <li><a class="nav-link " href="index.html">Home</a></li>
-                    <li><a class="nav-link active" href="about.html">About Us</a></li>
-                    <!-- <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                    <li><a class="nav-link" href="faq.html">FAQs</a></li> -->
-                    <li><a class="nav-link" href="career.html">Careers</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li><a class="nav-link active" href="about.html">About
+                            Us</a>
+                    </li>
+                    <li><a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li><a class="nav-link" href="career.html">Careers</a>
+                    </li>
+                    <li><a class="nav-link" href="contact.html">Contact
+                            Us</a>
+                    </li>
                 </ul>
             </nav>
 
             <div class="rts-social-border-area right-sidebar mt--80">
                 <ul>
                     <li><a href="#" aria-label="social link" data-description="social"><i
-                                class="fa-brands fa-facebook-f"></i></a></li>
+                                class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
                     <li><a href="#" aria-label="social link" data-description="social"><i
-                                class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#" aria-label="social link" data-description="social"><i
-                                class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="#" aria-label="social link" data-description="social"><i
-                                class="fa-brands fa-pinterest"></i></a></li>
-                    <li><a href="#" aria-label="social link" data-description="social"><i
-                                class="fa-brands fa-youtube"></i></a></li>
+                                class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/company/codenortis-infotech/posts/?feedView=all"
+                            aria-label="social link" data-description="social"><i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li><a href="#" aria-label="social link" data-description="social">
+                            <i class="fa-solid fa-basketball"></i>
+
+                        </a>
+                    </li>
+
+
                 </ul>
             </div>
         </div>
@@ -1052,10 +1067,8 @@
             autoplayHoverPause: true,
             responsive: {
                 0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
+                    items: 1,
+                    nav: false,
                 },
                 1000: {
                     items: 2
