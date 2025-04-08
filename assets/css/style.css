@@ -107,57 +107,57 @@
 
 /* manrope-regular - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/manrope-v15-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/manrope-v15-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* manrope-500 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/manrope-v15-latin-500.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/manrope-v15-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* manrope-600 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/manrope-v15-latin-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/manrope-v15-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* manrope-700 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/manrope-v15-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/manrope-v15-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* manrope-800 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/manrope-v15-latin-800.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/manrope-v15-latin-800.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
@@ -186,7 +186,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    font-family: 'Manrope';
+  font-family: 'Manrope';
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -346,7 +346,7 @@ h6 a,
   width: 200px;
 }
 
-.text-bold{
+.text-bold {
   font-weight: 600 !important;
 }
 
@@ -17824,6 +17824,11 @@ li.has-dropdown:hover .submenu {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .Achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .title-between-wrapper p.disc {
@@ -20626,6 +20631,7 @@ li.has-dropdown:hover .submenu {
   height: 100%;
   margin-top: calc(var(--bs-gutter-x)* .5);
   margin-bottom: calc(var(--bs-gutter-x)* .5);
+
 }
 
 .single-service-area-wrapper img {
@@ -20647,6 +20653,7 @@ li.has-dropdown:hover .submenu {
 
 .single-service-area-wrapper svg path {
   transition: 0.3s;
+  color: #0066FF;
 }
 
 .single-service-area-wrapper:hover {
@@ -20662,8 +20669,13 @@ li.has-dropdown:hover .submenu {
   stroke: #fff;
 }
 
+.single-service-area-wrapper svg {
+
+  color: #0066FF;
+}
+
 .single-service-area-wrapper:hover img {
-  filter: brightness(0) saturate(100%) invert(98%) sepia(15%) saturate(0%) hue-rotate(259deg) brightness(118%) contrast(100%);
+  color: #fff;
 }
 
 .service-list-between {
@@ -21548,7 +21560,7 @@ li.has-dropdown:hover .submenu {
   background-image: url(../images/testimonials.png);
 }
 
-.career-section{
+.career-section {
   position: sticky;
   top: 100px;
 }
@@ -21790,8 +21802,7 @@ li.has-dropdown:hover .submenu {
 #JobTitle-error,
 #Skills-error,
 #Gender-error,
-#Remark-error
-{
+#Remark-error {
   color: red !important;
 }
 
@@ -24478,5 +24489,54 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 @media only screen and (max-width: 767px) {
   [dir=rtl] .rts-blog-area .shape-bottom {
     display: none;
+  }
+
+  .nav-link {
+    color: black;
+}
+}
+
+
+@media only screen and (max-width: 575px) {
+
+  .Achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolio-filter-menu {
+    overflow: auto;
+    justify-content: start;
+  }
+
+  .portfolio-filter-menu li {
+    white-space: nowrap;
+  }
+
+
+  .Benefits-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .WhyChooseVision-list li p {
+    font-size: 16px;
+  }
+
+  .heropage-content {
+    width: 100%;
+  }
+
+  .rts-section-gap .check-wrapper,
+  .bg-gradient-one-industry .check-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .thumbnail-consultancy {
+    height: auto !important;
+  }
+
+  .career-two-section .title {
+    font-size: 36px !important;
+    margin-top: 12px;
   }
 }
