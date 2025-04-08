@@ -21650,8 +21650,8 @@ li.has-dropdown:hover .submenu {
 
 .select2-container--default .select2-selection--multiple {
   background-color: transparent;
-  border: 1px solid #aaa;
-  border-radius: 4px;
+  border: 1px solid #D1D1D1;
+  border-radius: 0;
   cursor: text;
 }
 
@@ -24493,7 +24493,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
   .nav-link {
     color: black;
-}
+  }
 }
 
 
@@ -24538,5 +24538,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   .career-two-section .title {
     font-size: 36px !important;
     margin-top: 12px;
+  }
+
+  .career-imges {
+    display: none;
   }
 }
