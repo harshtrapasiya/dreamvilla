@@ -753,7 +753,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(function () {
 
-    $("form[name='career-from']").validate({
+    $("form[name='apply-form']").validate({
       rules: {
         FullName: {
           required: true,
